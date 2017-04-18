@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		3229C3B61EA44F4A0027E1EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3229C3B51EA44F4A0027E1EA /* AppDelegate.swift */; };
-		3229C3B81EA44F4A0027E1EA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3229C3B71EA44F4A0027E1EA /* ViewController.swift */; };
-		3229C3BB1EA44F4A0027E1EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3229C3B91EA44F4A0027E1EA /* Main.storyboard */; };
 		3229C3BD1EA44F4A0027E1EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3229C3BC1EA44F4A0027E1EA /* Assets.xcassets */; };
 		3229C3C01EA44F4A0027E1EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3229C3BE1EA44F4A0027E1EA /* LaunchScreen.storyboard */; };
+		322C47671EA5A17E00430F6D /* CellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322C47661EA5A17E00430F6D /* CellView.swift */; };
+		322C47691EA5A7A200430F6D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322C47681EA5A7A200430F6D /* ViewController.swift */; };
+		32316F441EA4EA82009B9207 /* circle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 32316F431EA4EA82009B9207 /* circle@2x.png */; };
+		3293E3B71EA4A4B500E82314 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3293E3B61EA4A4B500E82314 /* Main.storyboard */; };
+		32D1756B1EA4511500FC68C9 /* JTAppleCalendar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32D1756A1EA4511500FC68C9 /* JTAppleCalendar.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3229C3B21EA44F4A0027E1EA /* CalendarSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalendarSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3229C3B51EA44F4A0027E1EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3229C3B71EA44F4A0027E1EA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		3229C3BA1EA44F4A0027E1EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3229C3BC1EA44F4A0027E1EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3229C3BF1EA44F4A0027E1EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3229C3C11EA44F4A0027E1EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		322C47661EA5A17E00430F6D /* CellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellView.swift; sourceTree = "<group>"; };
+		322C47681EA5A7A200430F6D /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		32316F431EA4EA82009B9207 /* circle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "circle@2x.png"; sourceTree = "<group>"; };
+		3293E3B61EA4A4B500E82314 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		32D1756A1EA4511500FC68C9 /* JTAppleCalendar.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JTAppleCalendar.framework; path = CalendarSample/Carthage/Build/iOS/JTAppleCalendar.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				32D1756B1EA4511500FC68C9 /* JTAppleCalendar.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +47,7 @@
 			children = (
 				3229C3B41EA44F4A0027E1EA /* CalendarSample */,
 				3229C3B31EA44F4A0027E1EA /* Products */,
+				32D175691EA4511500FC68C9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +62,32 @@
 		3229C3B41EA44F4A0027E1EA /* CalendarSample */ = {
 			isa = PBXGroup;
 			children = (
+				32316F451EA5995B009B9207 /* Images */,
 				3229C3B51EA44F4A0027E1EA /* AppDelegate.swift */,
-				3229C3B71EA44F4A0027E1EA /* ViewController.swift */,
-				3229C3B91EA44F4A0027E1EA /* Main.storyboard */,
+				322C47681EA5A7A200430F6D /* ViewController.swift */,
+				322C47661EA5A17E00430F6D /* CellView.swift */,
 				3229C3BC1EA44F4A0027E1EA /* Assets.xcassets */,
+				3293E3B61EA4A4B500E82314 /* Main.storyboard */,
 				3229C3BE1EA44F4A0027E1EA /* LaunchScreen.storyboard */,
 				3229C3C11EA44F4A0027E1EA /* Info.plist */,
 			);
 			path = CalendarSample;
+			sourceTree = "<group>";
+		};
+		32316F451EA5995B009B9207 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				32316F431EA4EA82009B9207 /* circle@2x.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		32D175691EA4511500FC68C9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				32D1756A1EA4511500FC68C9 /* JTAppleCalendar.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,6 +100,7 @@
 				3229C3AE1EA44F4A0027E1EA /* Sources */,
 				3229C3AF1EA44F4A0027E1EA /* Frameworks */,
 				3229C3B01EA44F4A0027E1EA /* Resources */,
+				32D1756C1EA4513500FC68C9 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -125,34 +152,45 @@
 			buildActionMask = 2147483647;
 			files = (
 				3229C3C01EA44F4A0027E1EA /* LaunchScreen.storyboard in Resources */,
+				3293E3B71EA4A4B500E82314 /* Main.storyboard in Resources */,
+				32316F441EA4EA82009B9207 /* circle@2x.png in Resources */,
 				3229C3BD1EA44F4A0027E1EA /* Assets.xcassets in Resources */,
-				3229C3BB1EA44F4A0027E1EA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		32D1756C1EA4513500FC68C9 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/CalendarSample/Carthage/Build/iOS/JTAppleCalendar.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3229C3AE1EA44F4A0027E1EA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3229C3B81EA44F4A0027E1EA /* ViewController.swift in Sources */,
+				322C47671EA5A17E00430F6D /* CellView.swift in Sources */,
 				3229C3B61EA44F4A0027E1EA /* AppDelegate.swift in Sources */,
+				322C47691EA5A7A200430F6D /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		3229C3B91EA44F4A0027E1EA /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3229C3BA1EA44F4A0027E1EA /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		3229C3BE1EA44F4A0027E1EA /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -262,6 +300,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = LPMD2DMU36;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CalendarSample/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = CalendarSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = fm.blunder.CalendarSample;
@@ -275,6 +317,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = LPMD2DMU36;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/CalendarSample/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = CalendarSample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = fm.blunder.CalendarSample;
@@ -302,6 +348,7 @@
 				3229C3C61EA44F4A0027E1EA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
